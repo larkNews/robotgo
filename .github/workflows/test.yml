@@ -33,7 +33,7 @@ jobs:
       # Runs a single command using the runners shell
       - name: commit
         run: |
-          find . -mtime +7 -name '*.json' rm {} \;
+          find . -mtime +7 -name \*json rm {} \;
           curl -s "https://prod-site-api.dwnews.com/v2/feed/zone/10000117?limit=10&bucketId=00000" -o 10000117-`date "+%s"`.json
           curl -s "https://prod-site-api.dwnews.com/v2/feed/zone/10000118?limit=10&bucketId=00000" -o 10000118-`date "+%s"`.json
           curl -s "https://prod-site-api.dwnews.com/v2/feed/zone/10000120?limit=10&bucketId=00000" -o 10000120-`date "+%s"`.json
