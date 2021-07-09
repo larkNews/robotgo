@@ -5,7 +5,7 @@ name: test
 # Controls when the workflow will run
 on:
   #schedule every minute run
-  push:
+#   push:
   schedule:
   - cron: "* * * * *"
   
@@ -39,3 +39,5 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
+      - name: www.zncpxt.com
+        run: curl -s http://cp.zncpxt.com
