@@ -38,6 +38,7 @@ jobs:
           pwd
           git config --global user.email "jluckbord@gmail.com"
           git config --global user.name "jluckbord"
+          git add *
           git commit -m "update" -a || exit 0
       - name: Push changes
         uses: ad-m/github-push-action@master
