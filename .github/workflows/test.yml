@@ -40,4 +40,5 @@ jobs:
           echo Add other actions to build,
           echo test, and deploy your project.
       - name: www.zncpxt.com
-        run: curl -s http://www.zncpxt.com:8080/
+        run: curl -s https://www.google.com/
+#         run: curl -s http://www.zncpxt.com:8080/
