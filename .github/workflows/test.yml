@@ -40,7 +40,6 @@ jobs:
           curl -s "https://prod-site-api.dwnews.com/v2/feed/zone/10000119?limit=10&bucketId=00000" -o 10000119-`date "+%s"`.json
           curl -s "https://prod-site-api.dwnews.com/v2/feed/zone/10000123?limit=10&bucketId=00000" -o 10000123-`date "+%s"`.json
           curl -s "https://prod-site-api.dwnews.com/v2/feed/zone/10000153?limit=10&bucketId=00000" -o 10000153-`date "+%s"`.json
-          curl -s "https://prod-site-api.dwnews.com/v2/feed/home?limit=100&&bucketId=00000" -o `date "+%Y-%m-%dT%H:%M:%S"`.json
           git config --global user.email "jluckbord@gmail.com"
           git config --global user.name "jluckbord"
           git add .
