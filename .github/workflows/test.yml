@@ -33,12 +33,12 @@ jobs:
       # Runs a single command using the runners shell
       - name: commit
         run: |
-          echo `date`>>a.out
+          echo `date`>>news.txt
           ls -al
           pwd
           git config --global user.email "jluckbord@gmail.com"
           git config --global user.name "jluckbord"
-          git add *
+          git add news.txt
           git commit -m "update" -a || exit 0
       - name: Push changes
         uses: ad-m/github-push-action@master
