@@ -34,6 +34,8 @@ jobs:
       - name: commit
         run: |
           echo `date`>>a.out
+          ls -al
+          pwd
           git config --global user.email "jluckbord@gmail.com"
           git config --global user.name "jluckbord"
           git commit -m "update" -a || exit 0
